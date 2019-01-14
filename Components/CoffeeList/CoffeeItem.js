@@ -4,12 +4,15 @@ import { ImageBackground, View } from "react-native";
 // NativeBase Components
 import { ListItem, Card, CardItem, Thumbnail, Text, Left } from "native-base";
 
+// Components
+import CoffeeDetail from "../CoffeeDetail";
+
 // Style
 import styles from "./styles";
 
 class CoffeeItem extends Component {
-  handlePress() {
-    alert("Pressed");
+  handlePress(coffeeShop) {
+    this.props.navigation.navigate("Detail", { coffeeshop: coffeeShop });
   }
   render() {
     const { coffeeShop } = this.props;
