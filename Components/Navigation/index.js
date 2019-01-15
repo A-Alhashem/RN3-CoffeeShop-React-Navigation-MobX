@@ -1,5 +1,7 @@
 import { createStackNavigator, createAppContainer } from "react-navigation";
 
+// Component
+
 import CoffeeList from "../CoffeeList/index";
 import CoffeeDetail from "../CoffeeDetail/index";
 import CoffeeCart from "../CoffeeCart/index";
