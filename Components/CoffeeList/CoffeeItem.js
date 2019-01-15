@@ -15,6 +15,7 @@ class CoffeeItem extends Component {
     this.props.navigation.navigate("Detail", { coffeeshop: coffeeShop });
   }
   render() {
+    // const coffeeShop = this.props.coffeeShop;
     const { coffeeShop } = this.props;
     return (
       <ImageBackground

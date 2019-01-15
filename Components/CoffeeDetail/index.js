@@ -12,7 +12,8 @@ import {
   List,
   ListItem,
   Picker,
-  Content
+  Content,
+  Icon
 } from "native-base";
 
 // Style
@@ -41,6 +42,17 @@ class CoffeeDetail extends Component {
       option: value
     });
   }
+
+  static navigationOptions = ({ navigation }) => {
+    return {
+      title: navigation.getParam("coffeeshop").name,
+      headerRight: (
+        <Button onPress={() => navigation.navigate("Cart")}>
+          <Icon name="cart" type="EvilIcons" />
+        </Button>
+      )
+    };
+  };
 
   render() {
     const coffeeshops = CoffeeStore.coffeeshops;

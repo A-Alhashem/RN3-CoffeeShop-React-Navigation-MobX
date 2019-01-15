@@ -9,6 +9,7 @@ import CoffeeStore from "../../store/coffeeStore";
 
 // Component
 import CoffeeItem from "./CoffeeItem";
+import CartButton from "../Navigation/CartButton";
 
 class CoffeeList extends Component {
   static navigationOptions = ({ navigation }) => ({
